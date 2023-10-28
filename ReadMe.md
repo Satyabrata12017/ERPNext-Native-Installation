@@ -4,23 +4,39 @@ Software Requirements
 Updated Ubuntu 22.04
 
 A user with sudo privileges
+
 Python 3.10+
-Node.js 16
+Node.js 18
+
 Hardware Requirements
+
 4GB RAM
 40GB Hard Disk
+
 Server Settings
+
+
 Update and Upgrade Packages
+
 sudo apt-get update -y
 sudo apt-get upgrade -y
+
+
 Create a new user – (bench user)
+
 In linux, the root user processes escalated privileges to perform any tasks within the system. This is why it is not advisable to use this user on a daily basis. We will create a user that we can use, and this will be the user we will also use as the Frappe Bench User.
 
 sudo adduser [frappe-user]
+
 usermod -aG sudo [frappe-user]
+
 su [frappe-user] 
+
 cd /home/[frappe-user]
+
 Ensure you have replaced [frappe-user] with your username. eg. sudo adduser frappe
+
+
 
 Install Required Packages
 A software like ERPNext, which is built on Frappe Framework, requires a number of packages in order to run smoothly. These are the packages we will be installing in this step.
