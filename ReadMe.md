@@ -1,5 +1,8 @@
 Software Requirements
+
+
 Updated Ubuntu 22.04
+
 A user with sudo privileges
 Python 3.10+
 Node.js 16
